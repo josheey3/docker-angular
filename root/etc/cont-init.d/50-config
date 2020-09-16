@@ -1,0 +1,9 @@
+#!/usr/bin/with-contenv bash
+
+# permissions
+chown -R abc:abc \
+	/config
+
+# chown the app directory, but not node_modules
+find /app -maxdepth 1 ! -name node_modules -exec chown -R abc:abc '{}' \;
+
