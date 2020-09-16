@@ -6,6 +6,7 @@ if [ ! -f "/app/angular.json" ]; then
 	npm install
 	npm install -g typescript
 	npm install -g @angular/cli
+	npm install -g @angular-devkit/build-angular
 
 	ng new my-angular-app
 	mv ./my-angular-app/* ./
